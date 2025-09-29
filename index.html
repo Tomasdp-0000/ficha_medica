@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario Ficha Médica</title>
+</head>
+
+<body>
+    <section class="form-register" id="mainFormContainer">
+        <h4>Formulario Ficha Médica</h4>
+        <form id="fichaMedicaForm" action="#" method="post">
+            <div class="form-group">
+                <label for="nombres">Nombres:</label>
+                <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese sus Nombres"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="apellidos">Apellidos:</label>
+                <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese sus Apellidos"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input class="controls" type="email" name="email" id="email" placeholder="Ingrese su Email" required>
+            </div>
+            <div class="form-group">
+                <label for="rut">RUT:</label>
+                <input class="controls" type="text" name="rut" id="rut" placeholder="Ingrese su RUT" required>
+            </div>
+            <div class="form-group">
+                <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                <input class="controls" type="date" name="fechaNacimiento" id="fechaNacimiento" required>
+            </div>
+            <div class="form-group">
+                <label for="estadoCivil">Estado Civil:</label>
+                <input class="controls" type="text" name="estadoCivil" id="estadoCivil"
+                    placeholder="Ingrese su Estado civil">
+            </div>
+            <div class="form-group">
+                <label for="direccion">Dirección:</label>
+                <input class="controls" type="text" name="direccion" id="direccion" placeholder="Ingrese su Dirección">
+            </div>
+            <div class="form-group">
+                <label for="ciudad">Ciudad:</label>
+                <input class="controls" type="text" name="ciudad" id="ciudad" placeholder="Ingrese su Ciudad">
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input class="controls" type="tel" name="telefono" id="telefono" placeholder="Ingrese su Teléfono">
+            </div>
+
+            <button type="submit" id="guardarBtn" disabled>Guardar</button>
+            <button type="reset">Limpiar</button>
+            <button type="button" id="cerrarBtn">Cerrar</button>
+        </form>
+
+        <hr>
+        <h4>Buscar Usuario por Apellido</h4>
+        <div class="search-section">
+            <input class="controls" type="text" id="buscarApellido" placeholder="Buscar por Apellido">
+            <button type="button" id="buscarBtn">Buscar</button>
+        </div>
+        <pre id="resultadosBusqueda"></pre>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
